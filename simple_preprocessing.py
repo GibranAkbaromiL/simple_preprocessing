@@ -1,12 +1,6 @@
 import re
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
-content = "kalau tidak ada bangkit!!! orang mati, maka kristus juga tidak bangkit."
-
-data = ["Kalau tidak ada kebangkitan orang mati, maka Kristus, juga tidak dibangkitkan! sebenar-benarnya",
-        "Sebab apabila orang bangkit dari antara orang mati, orang_orang tidak kawin dan ()tidak dikawinkan melainkan hidup seperti malaikat di sorga.",
-        "Sebab sama seperti maut datang karena satu orang manusia, demikian juga :kebangkitan orang mati datang karena satu ""orang manusia"]
-
 class preprocessing:
     def __init__(self, _input):
         self.clean_container = []
@@ -87,11 +81,3 @@ class preprocessing:
                         self.term_container.append(y)
             
             return self.term_container
-
-def testing():
-    return "test"
-# =============================================================================
-# data_input = preprocesssing(content)
-# 
-# print(data_input.stemming())
-# =============================================================================
