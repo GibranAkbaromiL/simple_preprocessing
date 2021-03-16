@@ -17,5 +17,5 @@ data_input = preprocessing(_input)
 6. and if only certain function that you need, just call the function directly, its 0kay
 7. Thats it
 
-#Note
+# Note
 make sure you install the stemming library first with ```pip install Sastrawi```
