@@ -26,7 +26,7 @@ class preprocessing:
                 self.clean_container.append(output)
         return self.clean_container
     
-    def tokenisasi(self): #lowercase the input and slit the input
+    def tokenization(self): #lowercase the input and slit the input
         self.cleaning()
         for i in self.clean_container:
             lowercase = i.lower()
@@ -35,7 +35,7 @@ class preprocessing:
         return self.token_container
     
     def filtering(self, stoplist): # filter data with stoplist
-        self.tokenisasi()
+        self.tokenization()
         with open(stoplist, "r") as f:
             content = f.read()
             hasil = set(content.splitlines())
