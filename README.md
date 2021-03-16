@@ -16,3 +16,6 @@ data_input = preprocessing(_input)
 5. if you have a stoplist.txt laying around somewhere, you can feed it to ```filtering, stemming, term``` or dont :)
 6. and if only certain function that you need, just call the function directly, its 0kay
 7. Thats it
+
+#Note
+make sure you install the stemming library first with ```pip install Sastrawi```
